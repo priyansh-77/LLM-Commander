@@ -1,37 +1,89 @@
-LLM Commander
-LLM Commander is a Next.js application for comparing responses from multiple Large Language Models (LLMs). It leverages the Genkit AI framework to handle prompt optimization and orchestrate queries across various LLM providers like OpenAI, Gemini, and Claude.
-🚀 Key Features
-Prompt Engineering
-Automatically refines raw natural language prompts to improve the quality of LLM responses.
-Multi-LLM Querying
-Send a single, optimized prompt to multiple LLMs (e.g., OpenAI, Gemini, Claude) and compare their responses side-by-side.
-Theming
-Includes both light and dark mode, powered by a customizable Tailwind CSS theme.
-🛠️ Getting Started
-Prerequisites
-Node.js v18.18.0 or newer
-npm, Yarn, or pnpm
-Installation
-Clone the repository
+# LLM Commander
+
+LLM Commander is a **Next.js application** that provides a user interface for comparing responses from multiple Large Language Models (LLMs).  
+It uses the **Genkit AI framework** to orchestrate AI flows, including prompt optimization and querying various LLM providers.
+
+---
+
+## 🚀 Key Features
+
+- **Prompt Engineering**: An AI flow refines your raw natural language prompts to improve the quality of LLM responses.  
+- **Multi-LLM Querying**: Easily send your optimized prompt to different LLMs (e.g., Gemini, OpenAI, Claude) and view the responses side-by-side.  
+- **Theming**: Includes light and dark mode support with a customizable Tailwind CSS theme.  
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (version **18.18.0** or newer)  
+- npm (or another package manager like Yarn or pnpm)  
+
+---
+
+### 📥 Installation
+
+Clone the repository:
+
+```bash
 git clone https://github.com/your-username/llm-commander.git
 cd llm-commander
-Install dependencies
+````
+
+Install dependencies:
+
+```bash
 npm install
-Set up environment variables
-Create a .env file in the root directory.
-Add your API keys for the LLM providers:
-GOOGLE_API_KEY=your_gemini_api_key
-OPENAI_API_KEY=your_openai_api_key
-CLAUDE_API_KEY=your_claude_api_key
-🔐 API keys must be obtained from the respective platforms (e.g., Google AI Studio, OpenAI, Anthropic).
-🧪 Usage
-Start Development Servers
-Next.js App
+```
+
+---
+
+### ⚙️ Environment Setup
+
+Create a `.env` file in the root of the project.
+Add your API keys for the LLMs you want to use. You'll need to obtain these from their respective providers (e.g., **Google AI Studio, OpenAI, Anthropic**).
+
+Example:
+
+```env
+GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+CLAUDE_API_KEY=YOUR_CLAUDE_API_KEY
+```
+
+---
+
+## ▶️ Usage
+
+### Development
+
+Start the **Next.js development server**:
+
+```bash
 npm run dev
-Genkit AI Flow Server
+```
+
+Start the **Genkit AI server** for local development and testing of your AI flows:
+
+```bash
 npm run genkit:dev
-Build for Production
+```
+
+---
+
+### Production Build
+
+Build the application for deployment:
+
+```bash
 npm run build
 npm run start
-📄 License
-MIT — Feel free to use, modify, and distribute this project.
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+```
